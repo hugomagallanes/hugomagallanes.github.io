@@ -182,14 +182,14 @@ footer {
 
 @media (min-width: 769px) {
 
-  article {
-    margin: 64px 90px 0;
-    padding: 0;
-  }
-
-  .card {
-    margin-right: 30px;
-  }
+  // article {
+  //   margin: 64px 90px 0;
+  //   padding: 0;
+  // }
+  //
+  // .card {
+  //   margin-right: 30px;
+  // }
 
 }// End @media 760px
 
@@ -237,10 +237,20 @@ footer {
   }
 
   // 2.Body --------------------- //
-  .card {
-    // margin-right: 60px;
-    margin: 0
+
+  article {
+    margin: 64px 0 0 0;
+    padding: 0;
   }
+
+  .card {
+    margin-bottom: 64px;
+  }
+
+  .last-card {
+    margin-left: 60px;
+  }
+
 
   // 3.Footer --------------------- //
   footer {

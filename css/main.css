@@ -104,14 +104,6 @@ footer {
 /* =================================
   Media Queries
 ==================================== */
-@media (min-width: 769px) {
-  article {
-    flex-direction: row;
-    flex-wrap: wrap; }
-
-  .card {
-    flex: 1 33%;
-    align-self: flex-start; } }
 @media (min-width: 1025px) {
   body {
     flex-direction: row; }
@@ -142,21 +134,26 @@ footer {
       line-height: 1; }
 
   article {
-    background-color: blue;
-    flex-direction: row; }
+    width: 960px;
+    align-items: flex-start;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
     article:after {
       content: "";
       flex: auto; }
 
   .card {
-    align-self: flex-start;
-    flex-basis: 0;
-    max-width: 280px; }
+    width: 280px; }
 
   video {
     margin-bottom: 0;
     max-width: none;
     width: 100%; }
+
+  .card-footer .info {
+    flex: 6; }
 
   footer {
     flex-direction: row; }
@@ -268,13 +265,6 @@ footer {
 /* =================================
   Media Queries
 ==================================== */
-@media (min-width: 769px) {
-  article {
-    margin: 64px 90px 0;
-    padding: 0; }
-
-  .card {
-    margin-right: 30px; } }
 @media (min-width: 1025px) {
   nav {
     border-bottom: none;
@@ -303,8 +293,15 @@ footer {
       margin: 0 12px;
       width: 1px; }
 
+  article {
+    margin: 64px 0 0 0;
+    padding: 0; }
+
   .card {
-    margin: 0; }
+    margin-bottom: 64px; }
+
+  .last-card {
+    margin-left: 60px; }
 
   footer {
     padding: 24px 90px; }

@@ -46,7 +46,6 @@ video {
 }
 
 .card-footer {
-
   // Properties as Flex-container
   display: flex;
   justify-content: space-between;
@@ -81,9 +80,6 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  // p {
-  //   background-color: blue;
-  // }
 
   // --> Only the footer-nav as a designated flex number
   div {
@@ -107,16 +103,16 @@ footer {
 // Tablet-size
 @media (min-width: 769px) {
 
-  article {
-    // Properties as Flex-container
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  // article {
+  //   // Properties as Flex-container
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  // }
 
-  .card {
-    flex: 1 33%;
-    align-self: flex-start;
-  }
+  // .card {
+  //   flex: 1 33%;
+  //   align-self: flex-start;
+  // }
 
 }
 
@@ -149,11 +145,10 @@ footer {
     left: 241px;
     width: calc(100% - 241px);
     position: relative;
+
   }
 
   section > header {
-    // background-color: green;
-
     // Properties as Flex-container
     align-items: flex-end;
     display: flex;
@@ -165,26 +160,26 @@ footer {
 
   }
 
-
   article {
-    background-color: blue;
-    // justify-content: flex-end;
+    width: 960px;
+
+    // Properties as Flex-container
+    align-items: flex-start;
+    align-self: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     // Adds a :after which autofills the remaining empty space
     &:after {
      content: "";
      flex: auto;
     }
+
   }
 
   .card {
-    // align-content: flex-end;
-
-    align-self: flex-start;
-    flex-basis: 0;
-    // min-width: 280px;
-    max-width: 280px;
+    width: 280px;
   }
 
   video {
@@ -192,6 +187,15 @@ footer {
     max-width: none;
     width: 100%;
   }
+
+  .card-footer {
+
+    .info {
+      flex: 6;
+    }
+
+  }
+
 
   footer {
     flex-direction: row;
