@@ -6,60 +6,82 @@ body {
   height: 100%;
   margin: 0; }
 
-.flex-wrapper {
+.fullpage {
   display: flex;
-  flex-flow: column nowrap;
-  /* Shorthand for:
-  flex-direction: column; (Same as row but top to bottom)
-  flex-wrapper: nowrap ; (default - All flex items will be on one line)
-  */
   height: 100%; }
-  .flex-wrapper .content {
-    display: flex;
-    flex: 1 1 auto; }
 
-.containerFull {
+.flex-wrapper {
   display: flex;
   position: relative;
   width: 100%;
   margin: 0 auto;
   padding: 0; }
-  .containerFull aside {
-    flex-basis: 35%; }
-    .containerFull aside footer {
-      position: absolute;
-      bottom: 20px; }
-  .containerFull section {
-    flex-basis: auto;
+  .flex-wrapper aside {
+    flex-basis: 240px;
+    border-right: 1px solid #EEEEEE; }
+    .flex-wrapper aside li {
+      line-height: 48px; }
+    .flex-wrapper aside .selected {
+      border-left: 4px solid #E0432C; }
+    .flex-wrapper aside a {
+      width: 100%;
+      display: inline-block; }
+    .flex-wrapper aside span {
+      margin-left: 30px; }
+  .flex-wrapper section {
+    overflow: scroll;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    overflow: scroll; }
-    .containerFull section .full {
-      flex-basis: 100%; }
+    flex-direction: column;
+    flex-basis: auto;
+    width: calc(100% - 240px); }
+    .flex-wrapper section header {
+      padding: 20px 0 20px 90px;
+      border-bottom: 1px solid #EEEEEE; }
+    .flex-wrapper section article {
+      display: flex;
+      flex-direction: column;
+      padding: 0 90px;
+      overflow: auto;
+      height: calc(100% - 62px); }
+    .flex-wrapper section .cards-grid {
+      padding: 45px 0;
+      flex-wrap: wrap;
+      display: flex;
+      background-color: orange;
+      order: 1; }
+    .flex-wrapper section .card {
+      width: 280px;
+      margin-right: 59px; }
+    .flex-wrapper section footer {
+      background-color: grey;
+      align-items: flex-end;
+      width: 100%;
+      height: 200px;
+      order: 999; }
 
 /* ---------->>> TYPOGRAPHY <<<-----------*/
 body {
   font-family: 'Atlas Grotesk Web';
   font-weight: 400;
   font-style: normal;
-  font-stretch: normal; }
+  font-stretch: normal;
+  line-height: 24px; }
 
 h1 {
   font-size: 30px;
   font-weight: 300; }
 
 h2 {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 18px;
+  color: #1E1E1E;
   font-family: 'Atlas Grotesk Web';
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-stretch: normal; }
 
 h3 {
-  font-size: 32px;
-  color: #fff;
+  font-size: 18px;
+  color: #1E1E1E;
   font-family: 'Atlas Grotesk Web';
   font-weight: 100;
   font-style: normal;
@@ -75,65 +97,37 @@ a {
 
 /* ---------->>> STYLING/SPACING <<<-----------*/
 body {
-  background-color: #1E1E1E; }
+  background-color: #fff; }
 
-aside {
-  background-color: white;
-  padding: 40px 20px 20px 20px; }
-  aside h1 {
-    margin-bottom: 80px; }
-    aside h1 span {
-      display: none; }
-  aside h2 {
-    margin-bottom: 12px; }
-  aside nav {
-    margin-top: 60px; }
-    aside nav ul > li {
-      margin-bottom: 20px; }
-      aside nav ul > li .currentPage {
-        border-bottom: 1px solid #E0432C;
-        color: #E0432C; }
-      aside nav ul > li .disabledPage {
-        opacity: 0.2; }
-      aside nav ul > li span:hover {
-        color: #E0432C; }
-      aside nav ul > li .disabledPage > span:hover {
-        border: none;
-        color: #9A9A9A; }
-  aside .caption {
-    font-size: 14px;
-    color: #bdbdbd; }
+aside h1 {
+  margin: 20px 0px; }
+  aside h1 img {
+    width: 180px;
+    margin-left: 30px; }
+  aside h1 span {
+    display: none; }
+aside .caption {
+  font-size: 14px;
+  color: #bdbdbd; }
 
-section {
-  margin: 20px 40px 40px 40px; }
-  section h3 {
-    margin-top: 20px;
-    margin-bottom: 20px; }
-
-.card {
-  width: 300px;
-  height: 600px;
-  padding: 10px;
-  margin-bottom: 140px; }
-  .card .details {
-    margin-top: 24px;
-    color: #fff; }
-    .card .details .title {
-      margin-bottom: 12px;
-      font-family: 'Atlas Grotesk Web';
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal; }
-    .card .details .description {
-      margin-bottom: 28px; }
-    .card .details .preview {
-      color: #9A9A9A;
-      padding-bottom: 3px;
-      border-bottom: 1px solid #9A9A9A; }
-      .card .details .preview:hover {
-        color: #E0432C;
-        border-color: #E0432C; }
-    .card .details span > img {
-      position: relative;
-      top: 1px;
-      height: 14px; }
+.card .details {
+  margin-top: 24px; }
+  .card .details .title {
+    margin-bottom: 12px;
+    font-family: 'Atlas Grotesk Web';
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal; }
+  .card .details .description {
+    margin-bottom: 28px; }
+  .card .details .preview {
+    color: #9A9A9A;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #9A9A9A; }
+    .card .details .preview:hover {
+      color: #E0432C;
+      border-color: #E0432C; }
+  .card .details span > img {
+    position: relative;
+    top: 1px;
+    height: 14px; }
