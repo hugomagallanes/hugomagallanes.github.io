@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Flexbox Layout - Fullscreen</title>
+  <title>WIP -- In-app Gallery</title>
 
-  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/2.0.13/plyr.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 <nav>
   <h1>
     <a href="#">
-      <object type="image/svg+xml" data="images/branding.svg" class="fa-logo" name="Follow Analytics"></object>
+      <object type="image/svg+xml" data="assets/followAnalytics.svg" class="fa-logo" name="Follow Analytics"></object>
     </a>
   </h1>
 
@@ -40,15 +40,15 @@
 <section>
 
   <header>
-    <h2>Full-screen</h2>
-    <!-- <div class="search">
-      <span>Search</span>
-    </div> -->
+    <h1>Fullscreen</h1>
+    <span></span>
+    <p class="caption">4 In-apps</p>
   </header>
+
 
   <article>
 
-<!-- Card_01  -->
+    <!-- Card_01  -->
     <div class="card">
       <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
         <!-- Video files -->
@@ -57,23 +57,22 @@
           <a href="videos/fullscreen/fullscreen_01.mp4" download>Download</a>
       </video>
 
-      <div class="fab">
-        <a href="https://github.com/sampotts/plyr" target="_blank" class="previewBtn">
-          <span></span>
-        </a>
-      </div>
+      <div class="card-footer">
 
-      <div class="details">
         <div class="info">
-          <p>Full-screen promo </p>
-          <p class="tags-title">Tags</p>
-          <p class="tags">retail, promotional, fullscreen</p>
+          <p>Fullscreen alert</p>
+          <p class="details">retail, promotional, fullscreen</p>
         </div>
-      </div>
 
-    </div>
 
-<!-- Card_02  -->
+        <a href="#" class="preview">
+          <img src="assets/icons/eye--icon@2x.png" alt="eye">
+        </a>
+
+      </div><!-- End details -->
+    </div><!-- End Card_01 -->
+
+    <!-- Card_02  -->
     <div class="card">
       <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
         <!-- Video files -->
@@ -82,14 +81,22 @@
           <a href="videos/fullscreen/fullscreen_01.mp4" download>Download</a>
       </video>
 
-      <p>In-App Title tets</p>
-      <p>Lorem ipsum dolor sit amet, ius et copiosae accommodare, et usu voluptua intellegebat.</p>
-    </div>
+      <div class="card-footer">
 
-<!-- Card_03  -->
+        <div class="info">
+          <p>Fullscreen promotional</p>
+          <p class="details">promo, video, fullscreen, brand-awareness</p>
+        </div>
+
+        <a href="#" class="preview">
+          <img src="assets/icons/eye--icon@2x.png" alt="eye">
+        </a>
+
+      </div><!-- End details -->
+    </div><!-- End Card_02 -->
+
+    <!-- Card_03  -->
     <div class="card">
-      <!-- <div class="video"></div> -->
-
       <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
         <!-- Video files -->
           <source src="videos/fullscreen/fullscreen_01.mp4" type="video/mp4">
@@ -97,40 +104,82 @@
           <a href="videos/fullscreen/fullscreen_01.mp4" download>Download</a>
       </video>
 
-      <p>In-App Title tets</p>
-      <p>Lorem ipsum dolor sit amet, ius et copiosae accommodare, et usu voluptua intellegebat.</p>
-    </div>
+      <div class="card-footer">
 
+        <div class="info">
+          <p>Fullscreen alert</p>
+          <p class="details">retail, promotional, fullscreen</p>
+        </div>
+
+
+        <a href="#" class="preview">
+          <img src="assets/icons/eye--icon@2x.png" alt="eye">
+        </a>
+
+      </div><!-- End details -->
+    </div><!-- End Card_03 -->
+
+
+    <!-- DELETE THIS SHIT -->
+    <!-- Card_02  -->
     <div class="card">
-      <div class="video"></div>
-      <p>Card title</p>
-      <p>Card description</p>
-    </div>
+      <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
+        <!-- Video files -->
+          <source src="videos/fullscreen/fullscreen_01.mp4" type="video/mp4">
+         <!-- Fallback for browsers that don't support the <video> element -->
+          <a href="videos/fullscreen/fullscreen_01.mp4" download>Download</a>
+      </video>
 
+      <div class="card-footer">
+
+        <div class="info">
+          <p>Fullscreen promotional</p>
+          <p class="details">promo, video, fullscreen, brand-awareness</p>
+        </div>
+
+        <a href="#" class="preview">
+          <img src="assets/icons/eye--icon@2x.png" alt="eye">
+        </a>
+
+      </div><!-- End details -->
+    </div><!-- End Card_02 -->
+
+    <!-- Card_03  -->
     <div class="card">
-      <div class="video"></div>
-      <p>Card title</p>
-      <p>Card description</p>
-    </div>
+      <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
+        <!-- Video files -->
+          <source src="videos/fullscreen/fullscreen_01.mp4" type="video/mp4">
+         <!-- Fallback for browsers that don't support the <video> element -->
+          <a href="videos/fullscreen/fullscreen_01.mp4" download>Download</a>
+      </video>
 
-    <div class="card">
-      <div class="video"></div>
-      <p>Card title</p>
-      <p>Card description</p>
-    </div>
+      <div class="card-footer">
 
-    <div class="card">
-      <div class="video"></div>
-      <p>Card title</p>
-      <p>Card description</p>
-    </div>
+        <div class="info">
+          <p>Fullscreen alert</p>
+          <p class="details">retail, promotional, fullscreen</p>
+        </div>
 
+
+        <a href="#" class="preview">
+          <img src="assets/icons/eye--icon@2x.png" alt="eye">
+        </a>
+
+      </div><!-- End details -->
+    </div><!-- End Card_03 -->
 
   </article>
 
   <footer>
-    <p>Copyright 2017 FollowAnalytics</p>
-    <a href="http://dev.followanalytics.com/">Go to Developer Portal</a>
+    <p class="details">@2017 FollowAnalytics. All right reserved.</p>
+
+    <div class="footer-nav">
+      <ul>
+        <li>
+          <a href="http://dev.followanalytics.com/">Developer Portal</a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
 </section>

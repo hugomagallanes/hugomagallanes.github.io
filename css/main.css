@@ -1,0 +1,312 @@
+/* =================================
+  Imports
+==================================== */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(../fonts/1704-YQBUBP.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* =================================
+  General
+==================================== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+nav {
+  display: flex;
+  justify-content: space-between; }
+
+ul {
+  display: flex;
+  align-items: center; }
+
+section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; }
+
+article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+video {
+  max-width: 400px;
+  width: 100%; }
+
+.card-footer {
+  display: flex;
+  justify-content: space-between; }
+  .card-footer .info {
+    flex: 2; }
+  .card-footer a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1; }
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between; }
+  footer div {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1; }
+
+/* =================================
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+  article {
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  .card {
+    flex: 1 33%;
+    align-self: flex-start; } }
+@media (min-width: 1025px) {
+  body {
+    flex-direction: row; }
+
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 400px;
+    bottom: 0;
+    position: fixed;
+    top: 0; }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start; }
+
+  section {
+    flex-grow: 0 !important;
+    left: 241px;
+    width: calc(100% - 241px);
+    position: relative; }
+
+  section > header {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row; }
+    section > header h1 {
+      line-height: 1; }
+
+  article {
+    background-color: blue;
+    flex-direction: row; }
+    article:after {
+      content: "";
+      flex: auto; }
+
+  .card {
+    align-self: flex-start;
+    flex-basis: 0;
+    max-width: 280px; }
+
+  video {
+    margin-bottom: 0;
+    max-width: none;
+    width: 100%; }
+
+  footer {
+    flex-direction: row; }
+    footer a {
+      order: 0; } }
+/* =================================
+  Variables
+==================================== */
+/* =================================
+  Typography
+==================================== */
+body {
+  font-family: 'Atlas Grotesk Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+
+h1 {
+  color: #2E2E2E;
+  font-size: 24px;
+  font-family: 'Atlas Grotesk Web';
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 36px; }
+
+p {
+  color: #2E2E2E;
+  font-size: 18px;
+  line-height: 24px; }
+
+.details {
+  color: #898989;
+  font-size: 14px;
+  line-height: 18px; }
+
+.caption {
+  color: #898989;
+  font-size: 12px;
+  font-family: 'Atlas Grotesk Web';
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: .5px;
+  line-height: 1;
+  text-transform: uppercase; }
+
+a {
+  color: #2E2E2E;
+  text-decoration: none; }
+
+/* =================================
+  Sections
+==================================== */
+/*
+  1.Navigation
+  2.Body
+    -- Header
+    -- Article
+  3.Footer
+*/
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 10px; }
+  nav li {
+    line-height: 40px;
+    margin-left: 20px; }
+    nav li:first-child {
+      margin-left: 0; }
+
+section {
+  background-color: #EEEEEE; }
+
+section > header {
+  margin: 36px 0;
+  padding: 0 15px; }
+  section > header span {
+    display: none; }
+
+article {
+  padding: 0 15px; }
+
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 56px; }
+
+.card-footer {
+  padding: 20px 14px; }
+
+.preview img {
+  height: 20px; }
+
+.plyr__play-large {
+  border-width: 2px !important;
+  cursor: pointer; }
+
+footer {
+  background-color: #fff;
+  padding: 24px 15px; }
+  footer p.details {
+    font-size: 12px;
+    width: 150px; }
+  footer a {
+    border-bottom: 1px solid #2E2E2E; }
+
+/* =================================
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+  article {
+    margin: 64px 90px 0;
+    padding: 0; }
+
+  .card {
+    margin-right: 30px; } }
+@media (min-width: 1025px) {
+  nav {
+    border-bottom: none;
+    border-right: 1px solid #EEEEEE;
+    padding: 20px; }
+    nav .fa-logo {
+      margin: 0;
+      width: 200px; }
+    nav ul {
+      margin-top: 60px; }
+    nav li {
+      line-height: 40px;
+      margin-left: 0; }
+      nav li:first-child {
+        margin-left: 0; }
+
+  section > header {
+    background-color: #fff;
+    border-bottom: 1px solid #EEEEEE;
+    margin: 0;
+    padding: 20px 90px; }
+    section > header span {
+      display: block;
+      background-color: #CDCDCD;
+      height: 20px;
+      margin: 0 12px;
+      width: 1px; }
+
+  .card {
+    margin: 0; }
+
+  footer {
+    padding: 24px 90px; }
+    footer p.details {
+      width: 300px; } }

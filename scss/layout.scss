@@ -1,13 +1,4 @@
 /* =================================
-  Imports
-==================================== */
-
-@import "reset.scss";
-@import "../fonts/1704-YQBUBP.css";
-@import "styles.scss";
-
-
-/* =================================
   General
 ==================================== */
 
@@ -38,10 +29,6 @@ section {
   flex-direction: column;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-}
 
 article {
   // Properties as Flex-item
@@ -58,33 +45,57 @@ video {
   width: 100%;
 }
 
-.details {
-  max-width: 400px;
-}
+.card-footer {
 
-.fab {
+  // Properties as Flex-container
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 
-  .previewBtn {
-    position: relative;
-    bottom: 27px;
+  .info {
+
+    // Properties as Flex-item
+    flex: 2;
   }
+
+  a {
+    // Properties as Flex-container
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    // Properties as Flex-item
+    flex: 1;
+  }
+
 }
+
 
 
 footer {
+  // background-color: red;
+
   // Properties as Flex-item
   margin-top: auto;
 
   // Properties as Flex-container
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 
-  a {
+  // p {
+  //   background-color: blue;
+  // }
+
+  // --> Only the footer-nav as a designated flex number
+  div {
+    // background-color: yellow;
+
+    // Properties as Flex-container
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+
     // Properties as Flex-item
-    order: -1;
+    flex: 1;
   }
 }
 
@@ -140,9 +151,25 @@ footer {
     position: relative;
   }
 
+  section > header {
+    // background-color: green;
+
+    // Properties as Flex-container
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+
+    h1 {
+      line-height: 1;
+    }
+
+  }
+
 
   article {
-    justify-content: space-around;
+    background-color: blue;
+    // justify-content: flex-end;
+    flex-direction: row;
 
     // Adds a :after which autofills the remaining empty space
     &:after {
@@ -152,9 +179,12 @@ footer {
   }
 
   .card {
+    // align-content: flex-end;
+
     align-self: flex-start;
     flex-basis: 0;
-    min-width: 256px;
+    // min-width: 280px;
+    max-width: 280px;
   }
 
   video {
