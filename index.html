@@ -4,153 +4,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Layout - Fullscreen</title>
 
-  <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/2.0.13/plyr.css">
-  <link rel="stylesheet" type="text/css" href="fonts/1704-YQBUBP.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <title>Fullscreen</title>
 </head>
-
 <body>
-  <div class="fullpage">
 
-    <div class="flex-wrapper">
-    <aside>
-      <h1>
-        <span>Follow Analytics</span>
-        <img src="assets/branding.svg" alt="Follow Analytics logo">
-      </h1>
+<nav>
+  <h1>
+    <a href="#">
+      <object type="image/svg+xml" data="images/branding.svg" class="fa-logo" name="Follow Analytics"></object>
+    </a>
+  </h1>
 
-      <nav>
-        <ul>
-          <li class="selected">
-            <a href="index.html"><span>Fullscreen</span></a>
-          </li>
+  <ul>
+    <li>
+      <a href="#">Full-screen</a>
+    </li>
 
-          <li>
-            <a href="banner.html"><span>Banner</span></a>
-          </li>
+    <li>
+      <a href="#">Pop-up</a>
+    </li>
 
-          <li>
-            <a href="#" class="disabledPage"><span>Pop-up</span></a>
-          </li>
+    <li>
+      <a href="#">Banner</a>
+    </li>
 
-        </ul>
-      </nav>
-    </aside><!-- End aside -->
+    <li>
+      <a href="#">Embedded</a>
+    </li>
+  </ul>
+</nav>
 
-    <section>
-        ko
+<section>
 
-        <div class="cards-grid">
-          <div class="card">
-            <!-- <video poster="https://cdn.selz.com/plyr/1.5/View_From_A_Blue_Moon_Trailer-HD.jpg" controls crossorigin> -->
-            <video poster="assets/fullscreen/cover_01.png" controls crossorigin>
-              <!-- Video files -->
-                  <source src="assets/fullscreen/fullscreen_01.mp4" type="video/mp4">
+  <header>
+    <h2>Full-screen</h2>
+    <!-- <div class="search">
+      <span>Search</span>
+    </div> -->
+  </header>
 
-               <!-- Fallback for browsers that don't support the <video> element -->
-              <a href="assets/fullscreen/fullscreen_01.mp4" download>Download</a>
-            </video>
+  <article>
 
-            <div class="details">
-              <p class="title">Fullscreen 01</p>
-              <p class="description">Fullscreen in-app with single button and entry/exit animation.</p>
+<!-- Card_01  -->
+    <div class="card">
+      <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
+        <!-- Video files -->
+          <source src="videos/fullscreen/fullscreen_01.mp4" type="video/mp4">
+         <!-- Fallback for browsers that don't support the <video> element -->
+          <a href="videos/fullscreen/fullscreen_01.mp4" download>Download</a>
+      </video>
 
-              <span>
-                <img src="assets/phone--icon.svg" alt="phone icon">
-              </span>
+      <div class="fab">
+        <a href="https://github.com/sampotts/plyr" target="_blank" class="previewBtn">
+          <span></span>
+        </a>
+      </div>
 
-              <a href="https://framer.cloud/kmHFv" class="preview">
-                Preview on mobile device
-              </a>
-            </div>
-          </div><!-- End card -->
-          <div class="card">
-            <!-- <video poster="https://cdn.selz.com/plyr/1.5/View_From_A_Blue_Moon_Trailer-HD.jpg" controls crossorigin> -->
-            <video poster="assets/fullscreen/cover_02.png" controls crossorigin>
-              <!-- Video files -->
-                  <source src="assets/fullscreen/fullscreen_02.mp4" type="video/mp4">
-
-               <!-- Fallback for browsers that don't support the <video> element -->
-              <a href="assets/fullscreen/fullscreen_02.mp4" download>Download</a>
-            </video>
-
-            <div class="details">
-              <p class="title">Fullscreen 02</p>
-              <p class="description">Fullscreen promo in-app with entry/exit animation.</p>
-
-              <span>
-                <img src="assets/phone--icon.svg" alt="phone icon">
-              </span>
-
-              <a href="https://framer.cloud/GVasO" class="preview">
-                Preview on mobile device
-              </a>
-            </div>
-          </div><!-- End card -->
-          <div class="card">
-            <!-- <video poster="https://cdn.selz.com/plyr/1.5/View_From_A_Blue_Moon_Trailer-HD.jpg" controls crossorigin> -->
-            <video poster="assets/fullscreen/cover_02.png" controls crossorigin>
-              <!-- Video files -->
-                  <source src="assets/fullscreen/fullscreen_02.mp4" type="video/mp4">
-
-               <!-- Fallback for browsers that don't support the <video> element -->
-              <a href="assets/fullscreen/fullscreen_02.mp4" download>Download</a>
-            </video>
-
-            <div class="details">
-              <p class="title">Fullscreen 02</p>
-              <p class="description">Fullscreen promo in-app with entry/exit animation.</p>
-
-              <span>
-                <img src="assets/phone--icon.svg" alt="phone icon">
-              </span>
-
-              <a href="https://framer.cloud/GVasO" class="preview">
-                Preview on mobile device
-              </a>
-            </div>
-          </div><!-- End card -->
-          <div class="card">
-            <!-- <video poster="https://cdn.selz.com/plyr/1.5/View_From_A_Blue_Moon_Trailer-HD.jpg" controls crossorigin> -->
-            <video poster="assets/fullscreen/cover_02.png" controls crossorigin>
-              <!-- Video files -->
-                  <source src="assets/fullscreen/fullscreen_02.mp4" type="video/mp4">
-
-               <!-- Fallback for browsers that don't support the <video> element -->
-              <a href="assets/fullscreen/fullscreen_02.mp4" download>Download</a>
-            </video>
-
-            <div class="details">
-              <p class="title">Fullscreen 02</p>
-              <p class="description">Fullscreen promo in-app with entry/exit animation.</p>
-
-              <span>
-                <img src="assets/phone--icon.svg" alt="phone icon">
-              </span>
-
-              <a href="https://framer.cloud/GVasO" class="preview">
-                Preview on mobile device
-              </a>
-            </div>
-          </div><!-- End card -->
+      <div class="details">
+        <div class="info">
+          <p>Full-screen promo </p>
+          <p class="tags-title">Tags</p>
+          <p class="tags">retail, promotional, fullscreen</p>
         </div>
+      </div>
 
-        <footer>
-          <p> 2017 - Follow Analytics</p>
-        </footer>
-    </section>
+    </div>
 
-  </div>
-</div><!-- End flex-wrapper -->
+<!-- Card_02  -->
+    <div class="card">
+      <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
+        <!-- Video files -->
+          <source src="videos/fullscreen/fullscreen_01.mp4" type="video/mp4">
+         <!-- Fallback for browsers that don't support the <video> element -->
+          <a href="videos/fullscreen/fullscreen_01.mp4" download>Download</a>
+      </video>
+
+      <p>In-App Title tets</p>
+      <p>Lorem ipsum dolor sit amet, ius et copiosae accommodare, et usu voluptua intellegebat.</p>
+    </div>
+
+<!-- Card_03  -->
+    <div class="card">
+      <!-- <div class="video"></div> -->
+
+      <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
+        <!-- Video files -->
+          <source src="videos/fullscreen/fullscreen_01.mp4" type="video/mp4">
+         <!-- Fallback for browsers that don't support the <video> element -->
+          <a href="videos/fullscreen/fullscreen_01.mp4" download>Download</a>
+      </video>
+
+      <p>In-App Title tets</p>
+      <p>Lorem ipsum dolor sit amet, ius et copiosae accommodare, et usu voluptua intellegebat.</p>
+    </div>
+
+    <div class="card">
+      <div class="video"></div>
+      <p>Card title</p>
+      <p>Card description</p>
+    </div>
+
+    <div class="card">
+      <div class="video"></div>
+      <p>Card title</p>
+      <p>Card description</p>
+    </div>
+
+    <div class="card">
+      <div class="video"></div>
+      <p>Card title</p>
+      <p>Card description</p>
+    </div>
+
+    <div class="card">
+      <div class="video"></div>
+      <p>Card title</p>
+      <p>Card description</p>
+    </div>
 
 
+  </article>
 
+  <footer>
+    <p>Copyright 2017 FollowAnalytics</p>
+    <a href="http://dev.followanalytics.com/">Go to Developer Portal</a>
+  </footer>
 
+</section>
+
+<!-- Initiate plyr.js -->
 <script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
-<script>plyr.setup();</script>
+<script>
+
+var options = {
+  volume: 1,
+  controls: ['play-large', 'current-time', 'fullscreen']
+}
+
+plyr.setup(options);
+
+</script>
 </body>
 </html>
