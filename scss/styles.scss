@@ -1,0 +1,228 @@
+/* =================================
+  Variables
+==================================== */
+
+// Colors
+$black: #1E1E1E;
+$lightgrey: #EEEEEE;
+$grey: #eee;
+$darkgrey: #B5B5B5;
+
+$white: #fff;
+$fa-orange: #E0432C;
+
+// Typography
+
+
+@mixin AtlasGrotesk-Regular-Web {
+  font-family: 'Atlas Grotesk Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@mixin AtlasGrotesk-Medium-Web {
+  font-family: 'Atlas Grotesk Web';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@mixin AtlasGrotesk-Light-Web {
+  font-family: 'Atlas Grotesk Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+/* =================================
+  General
+==================================== */
+
+
+body {
+  @include AtlasGrotesk-Regular-Web;
+}
+
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+
+/* =================================
+  Sections
+==================================== */
+
+// Navigation
+nav {
+  background-color: $white;
+  border-bottom: 1px solid $lightgrey;
+  padding: 10px;
+
+  li {
+    line-height: 40px;
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+// Header
+header {
+  background-color: $white;
+  border-bottom: 1px solid $lightgrey;
+  padding: 11px 20px;
+}
+
+// Footer
+footer {
+  background-color: $darkgrey;
+  height: 60px;
+  padding: 20px;
+}
+
+// Articles - Main section
+article {
+  padding: 45px 45px;
+}
+
+.card {
+  background-color: $white;
+  box-shadow: 0 10px 20px 1px rgba(0,0,0,0.25);
+  margin-bottom: 45px;
+}
+
+//---> Video player default controls
+.plyr__play-large {
+  background-color: $fa-orange !important;
+  border-width: 2px !important;
+  cursor: pointer;
+}
+
+//---> Text
+.details {
+
+  .info {
+    padding: 20px;
+
+    p:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .tags-title {
+    font-size: 14px !important;
+    @include AtlasGrotesk-Medium-Web;
+  }
+
+  .tags {
+    color: $darkgrey;
+    font-size: 14px;
+  }
+
+}
+
+//---> Floating button for preview
+.fab {
+  height: 0;
+  background: #db4437;
+}
+
+.previewBtn {
+  background: $fa-orange;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+  height: 55px;
+  right: 15px;
+  width: 55px;
+  z-index: 10;
+
+  &:hover {
+    background: #C93721;
+  }
+
+  span {
+    background: url("../images/phone--icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 55px;
+    width: 55px;
+  }
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+
+  article {
+    padding: 45px 90px;
+  }
+
+  .card {
+    margin-right: 30px;
+  }
+
+}// End @media 760px
+
+@media (min-width: 1025px) {
+
+  // Navigation
+  nav {
+    border-bottom: none;
+    border-right: 1px solid $lightgrey;
+    padding: 20px;
+
+    .fa-logo {
+      margin: 0;
+      width: 200px;
+    }
+
+    ul {
+      margin-top: 60px;
+    }
+
+    li {
+      line-height: 40px;
+      margin-left: 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // Header
+  header {
+    padding: 24px 20px;
+
+    h2 {
+      font-size: 20px;
+      @include AtlasGrotesk-Light-Web;
+    }
+  }
+
+  // Section + Articles - Main section
+  section {
+    background-color: $lightgrey;
+  }
+
+  .card {
+    margin-right: 60px;
+  }
+
+
+} // End @media 1025px

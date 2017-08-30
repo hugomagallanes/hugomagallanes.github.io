@@ -1,0 +1,175 @@
+/* =================================
+  Imports
+==================================== */
+
+@import "reset.scss";
+@import "../fonts/1704-YQBUBP.css";
+@import "styles.scss";
+
+
+/* =================================
+  General
+==================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  // Properties as Flex-container
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  // Properties as Flex-container
+  display: flex;
+  align-items: center;
+}
+
+section {
+  // Properties as Flex-item
+  flex-grow: 1;
+
+  // Properties as Flex-container
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  // Properties as Flex-item
+  flex: 1;
+
+  // Properties as Flex-container
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  max-width: 400px;
+  width: 100%;
+}
+
+.details {
+  max-width: 400px;
+}
+
+.fab {
+  display: flex;
+  justify-content: flex-end;
+
+  .previewBtn {
+    position: relative;
+    bottom: 27px;
+  }
+}
+
+
+footer {
+  // Properties as Flex-item
+  margin-top: auto;
+
+  // Properties as Flex-container
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    // Properties as Flex-item
+    order: -1;
+  }
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+// Tablet-size
+@media (min-width: 769px) {
+
+  article {
+    // Properties as Flex-container
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 33%;
+    align-self: flex-start;
+  }
+
+}
+
+// Desktop-size
+@media (min-width: 1025px) {
+
+  body {
+    flex-direction: row;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 400px;
+
+    // Fixes nav on the left side of the UI
+    bottom: 0;
+    position: fixed;
+    top: 0;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section {
+    // Overrides the inital setup and recalculates the overall width of the section
+    flex-grow: 0!important;
+    left: 241px;
+    width: calc(100% - 241px);
+    position: relative;
+  }
+
+
+  article {
+    justify-content: space-around;
+
+    // Adds a :after which autofills the remaining empty space
+    &:after {
+     content: "";
+     flex: auto;
+    }
+  }
+
+  .card {
+    align-self: flex-start;
+    flex-basis: 0;
+    min-width: 256px;
+  }
+
+  video {
+    margin-bottom: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: row;
+
+    a {
+      // Properties as Flex-item
+      order: 0;
+    }
+  }
+
+}
