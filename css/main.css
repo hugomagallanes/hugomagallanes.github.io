@@ -50,7 +50,7 @@ table {
   border-spacing: 0; }
 
 /* =================================
-  General
+  Layout (mobile-first)
 ==================================== */
 body {
   display: flex;
@@ -58,6 +58,7 @@ body {
   min-height: 100vh; }
 
 nav {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -75,44 +76,31 @@ ul {
   display: flex;
   flex-direction: column; }
 
-section {
-  flex-grow: 1;
+.wrapper {
+  box-sizing: border-box; }
+
+.row {
   display: flex;
   flex-direction: column; }
 
-article {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-video {
-  max-width: 400px;
-  width: 100%; }
-
-.card-footer {
-  display: flex;
-  justify-content: space-between; }
-  .card-footer .info {
-    flex: 2; }
-  .card-footer a {
+.card {
+  box-sizing: border-box; }
+  .card .card-footer {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex: 1; }
+    justify-content: space-between; }
 
 footer {
-  margin-top: auto;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: auto; }
   footer div {
     align-items: flex-start;
     display: flex;
-    justify-content: flex-end;
-    flex: 1; }
+    flex: 1;
+    justify-content: flex-end; }
 
 /* =================================
-  Media Queries
+  Media Queries - Tablet
 ==================================== */
 @media (min-width: 769px) {
   nav {
@@ -125,11 +113,44 @@ footer {
   .nav-header {
     flex: 1; }
 
+  .nav-header > span {
+    display: none; }
+
   ul {
     flex: 1;
     flex-direction: row;
-    justify-content: space-between; } }
-@media (min-width: 1025px) {
+    justify-content: space-between; }
+
+  .wrapper > header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .wrapper > header div {
+      display: flex;
+      align-items: flex-end; }
+    .wrapper > header h1 {
+      line-height: 1 !important; }
+
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 780px; }
+    .row:after {
+      content: "";
+      flex: auto; }
+
+  .card {
+    flex: 1 1 360px;
+    margin-right: 60px;
+    max-width: 360px; }
+    .card:nth-child(2n+0) {
+      margin-right: 0; } }
+/* =================================
+  Media Queries - Desktop
+==================================== */
+@media (min-width: 1136px) {
   body {
     flex-direction: row; }
 
@@ -150,31 +171,29 @@ footer {
     flex-direction: column;
     justify-content: flex-start; }
 
-  section {
-    flex-grow: 0 !important;
-    left: 241px;
-    width: calc(100% - 241px);
-    position: relative; }
+  .wrapper {
+    margin-left: 240px;
+    width: calc(100% - 240px); }
 
-  section > header {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: row; }
-    section > header h1 {
-      line-height: 1; }
+  .wrapper > header {
+    justify-content: flex-start;
+    height: 64px; }
 
-  article {
-    align-items: flex-start;
-    align-self: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    article:after {
-      content: "";
-      flex: auto; }
+  .row {
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: 90px;
+    margin-top: 56px;
+    max-width: 1200px; }
 
   .card {
-    width: 280px; }
+    box-sizing: border-box;
+    flex: 1 1 300px;
+    max-width: 300px; }
+    .card:nth-child(2n+0) {
+      margin-right: 60px; }
+    .card:nth-child(3n+0) {
+      margin-right: 60px; }
 
   video {
     margin-bottom: 0;
@@ -254,8 +273,17 @@ nav {
 .nav-header {
   height: 76px;
   padding: 0 15px; }
-  .nav-header img {
-    height: 16px; }
+
+.nav-menu-icon span {
+  display: block;
+  height: 100%; }
+.nav-menu-icon a {
+  display: flex;
+  height: 100%;
+  width: 50px; }
+.nav-menu-icon img {
+  margin: auto 0 auto auto;
+  height: 16px; }
 
 #nav-collapsible {
   display: none; }
@@ -324,9 +352,6 @@ footer {
   Media Queries - Tablet
 ==================================== */
 @media (min-width: 769px) {
-  .nav-header > span {
-    display: none; }
-
   #nav-collapsible > ul {
     background-color: #fff; }
     #nav-collapsible > ul li {
@@ -334,11 +359,25 @@ footer {
       #nav-collapsible > ul li:hover {
         background-color: #fff; }
     #nav-collapsible > ul a {
-      color: #2E2E2E; } }
+      color: #2E2E2E; }
+
+  .nav-menu-icon {
+    display: none; }
+
+  section > header {
+    align-items: center;
+    box-sizing: border-box;
+    height: 48px; }
+    section > header span {
+      display: block;
+      background-color: #CDCDCD;
+      height: 20px;
+      margin: 0 12px;
+      width: 1px; } }
 /* =================================
   Media Queries - Desktop
 ==================================== */
-@media (min-width: 1025px) {
+@media (min-width: 1136px) {
   nav {
     border-bottom: none;
     border-right: 1px solid #EEEEEE; }
@@ -347,31 +386,18 @@ footer {
     width: 200px; }
 
   #nav-collapsible > ul li {
+    box-sizing: border-box;
     text-align: left;
     padding-left: 30px; }
+
+  .row {
+    padding: 0; }
 
   section > header {
     background-color: #fff;
     border-bottom: 1px solid #EEEEEE;
     margin: 0;
     padding: 20px 90px; }
-    section > header span {
-      display: block;
-      background-color: #CDCDCD;
-      height: 20px;
-      margin: 0 12px;
-      width: 1px; }
-
-  article {
-    margin: 64px 90px 0 90px;
-    padding: 0; }
-
-  .card {
-    margin-bottom: 64px;
-    margin-right: 30px; }
-
-  .last-card {
-    margin-right: 0; }
 
   footer {
     padding: 24px 90px; }

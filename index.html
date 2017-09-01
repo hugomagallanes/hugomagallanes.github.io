@@ -13,7 +13,6 @@
 <body>
 
 <nav>
-
   <div class="nav-header">
     <h1>
       <a href="#">
@@ -21,47 +20,46 @@
       </a>
     </h1>
 
-    <span>
+    <span class="nav-menu-icon">
       <a href="javascript:void(0)" onclick="myFunction()">
         <img src="assets/icons/menu--icon@2x.png" alt="">
       </a>
     </span>
-
-    <!-- <button onclick="myFunction()">Click Me</button> -->
-  </div>
+  </div><!-- End nav-header-->
 
   <div id="nav-collapsible">
-  <ul>
-    <li>
-      <a href="#">Full-screen</a>
-    </li>
+    <ul>
+      <li>
+        <a href="#">Full-screen</a>
+      </li>
 
-    <li>
-      <a href="#">Pop-up</a>
-    </li>
+      <li>
+        <a href="#">Pop-up</a>
+      </li>
 
-    <li>
-      <a href="#">Banner</a>
-    </li>
+      <li>
+        <a href="#">Banner</a>
+      </li>
 
-    <li>
-      <a href="#">Embedded</a>
-    </li>
-  </ul>
-  </div>
-
+      <li>
+        <a href="#">Embedded</a>
+      </li>
+    </ul>
+  </div><!-- End nav-collapsible-->
 </nav>
 
-<section>
+
+<section class="wrapper">
 
   <header>
-    <h1>Fullscreen</h1>
-    <span></span>
-    <p class="caption">4 In-apps</p>
+    <div>
+      <h1>Fullscreen</h1>
+      <span></span>
+      <p class="caption">4 In-apps</p>
+    </div>
   </header>
 
-
-  <article>
+  <article class="row">
 
     <!-- Card_01  -->
     <div class="card">
@@ -73,19 +71,16 @@
       </video>
 
       <div class="card-footer">
-
         <div class="info">
           <p>Fullscreen alert</p>
           <p class="details">retail, promotional, fullscreen</p>
         </div>
-
-
         <a href="#" class="preview">
           <img src="assets/icons/eye--icon@2x.png" alt="eye">
         </a>
+      </div><!-- End card-footer -->
 
-      </div><!-- End details -->
-    </div><!-- End Card_01 -->
+    </div><!-- End card -->
 
     <!-- Card_02  -->
     <div class="card">
@@ -160,7 +155,7 @@
     </div><!-- End Card_02 -->
 
     <!-- Card_03  -->
-    <div class="card last-card">
+    <div class="card">
       <video poster="videos/fullscreen/cover_01.png" class="video" controls crossorigin>
         <!-- Video files -->
           <source src="videos/fullscreen/fullscreen_01.mp4" type="video/mp4">

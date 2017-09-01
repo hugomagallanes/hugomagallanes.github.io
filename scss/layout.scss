@@ -1,5 +1,5 @@
 /* =================================
-  General
+  Layout (mobile-first)
 ==================================== */
 
 body {
@@ -8,8 +8,10 @@ body {
   min-height: 100vh;
 }
 
+
+// 1.Navigation --------------------- //
 nav {
-  // Properties as Flex-container
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,95 +28,53 @@ nav {
 }
 
 ul {
-  // Properties as Flex-container
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-section {
-  // Properties as Flex-item
-  flex-grow: 1;
+// 2.Body --------------------- //
+.wrapper {
+  box-sizing: border-box;
+}
 
-  // Properties as Flex-container
+.row {
   display: flex;
   flex-direction: column;
 }
 
+.card {
+  box-sizing: border-box;
 
-article {
-  // Properties as Flex-item
-  flex: 1;
-
-  // Properties as Flex-container
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-video {
-  max-width: 400px;
-  width: 100%;
-}
-
-.card-footer {
-  // Properties as Flex-container
-  display: flex;
-  justify-content: space-between;
-
-  .info {
-
-    // Properties as Flex-item
-    flex: 2;
-  }
-
-  a {
-    // Properties as Flex-container
+  .card-footer {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    // Properties as Flex-item
-    flex: 1;
+    justify-content: space-between;
   }
-
 }
 
-
-
+// 3.Footer --------------------- //
 footer {
-  // background-color: red;
-
-  // Properties as Flex-item
-  margin-top: auto;
-
-  // Properties as Flex-container
   display: flex;
   justify-content: space-between;
-
+  margin-top: auto;
 
   // --> Only the footer-nav as a designated flex number
   div {
-    // background-color: yellow;
-
-    // Properties as Flex-container
     align-items: flex-start;
     display: flex;
-    justify-content: flex-end;
-
-    // Properties as Flex-item
     flex: 1;
+    justify-content: flex-end;
   }
 }
 
 
 /* =================================
-  Media Queries
+  Media Queries - Tablet
 ==================================== */
 
-// 1.Tablet-size --------------------- //
 @media (min-width: 769px) {
 
+  // 1.Navigation --------------------- //
   nav {
     flex-direction: row;
   }
@@ -128,20 +88,67 @@ footer {
     flex: 1;
   }
 
+  .nav-header > span {
+    display: none;
+  }
+
   ul {
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
   }
+
+  // 2.Body --------------------- //
+  .wrapper > header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    div {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    h1 {
+      line-height: 1!important;
+    }
+  }
+
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 780px;
+
+    &:after {
+     content: "";
+     flex: auto;
+    }
+  }
+
+  .card {
+    flex: 1 1 360px;
+    margin-right: 60px;
+    max-width: 360px;
+
+    &:nth-child(2n+0) {
+      margin-right: 0;
+    }
+  }
 }
 
-// 2.Desktop-size --------------------- //
-@media (min-width: 1025px) {
+/* =================================
+  Media Queries - Desktop
+==================================== */
+
+@media (min-width: 1136px) {
 
   body {
     flex-direction: row;
   }
 
+  // 1.Navigation --------------------- //
   nav {
     flex-direction: column;
     justify-content: flex-start;
@@ -165,47 +172,37 @@ footer {
   }
 
 
-  section {
-    // Overrides the inital setup and recalculates the overall width of the section
-    flex-grow: 0!important;
-    left: 241px;
-    width: calc(100% - 241px);
-    position: relative;
-
+  // 2.Body --------------------- //
+  .wrapper {
+    margin-left: 240px;
+    width: calc(100% - 240px);
   }
 
-  section > header {
-    // Properties as Flex-container
-    align-items: flex-end;
-    display: flex;
-    flex-direction: row;
-
-    h1 {
-      line-height: 1;
-    }
-
+  .wrapper > header {
+    justify-content: flex-start;
+    height: 64px;
   }
 
-  article {
-    // width: 960px;
-
-    // Properties as Flex-container
-    align-items: flex-start;
-    align-self: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    // Adds a :after which autofills the remaining empty space
-    &:after {
-     content: "";
-     flex: auto;
-    }
-
+  .row {
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: 90px;
+    margin-top: 56px;
+    max-width: 1200px;
   }
 
   .card {
-    width: 280px;
+    box-sizing: border-box;
+    flex: 1 1 300px;
+    max-width: 300px;
+
+    &:nth-child(2n+0) {
+      margin-right: 60px;
+    }
+
+    &:nth-child(3n+0) {
+      margin-right: 60px;
+    }
   }
 
   video {
@@ -215,14 +212,12 @@ footer {
   }
 
   .card-footer {
-
     .info {
       flex: 6;
     }
-
   }
 
-
+  // 3.Footer --------------------- //
   footer {
     flex-direction: row;
 
@@ -235,5 +230,4 @@ footer {
       order: 0;
     }
   }
-
 }
