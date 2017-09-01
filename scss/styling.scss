@@ -8,6 +8,7 @@ $darkgrey: #898989;
 $grey: #CDCDCD;
 $lightgrey: #EEEEEE;
 $white: #fff;
+$fa-orange: #E0432C;
 
 
 // Typography
@@ -15,6 +16,11 @@ $title-fontsize: 24px;
 $body-fontsize: 18px;
 $details-fontsize: 14px;
 $caption-fontsize: 12px;
+
+
+/* =================================
+  Typography
+==================================== */
 
 @mixin AtlasGrotesk-Regular-Web {
   font-family: 'Atlas Grotesk Web';
@@ -37,13 +43,9 @@ $caption-fontsize: 12px;
   font-stretch: normal;
 }
 
-
-/* =================================
-  Typography
-==================================== */
-
 body {
   @include AtlasGrotesk-Regular-Web;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -97,22 +99,58 @@ a {
 nav {
   background-color: $white;
   border-bottom: 1px solid $lightgrey;
-  padding: 10px;
+}
 
-  li {
-    line-height: 40px;
-    margin-left: 20px;
+.nav-header {
+  height: 76px;
+  padding: 0 15px;
 
-    &:first-child {
-      margin-left: 0;
-    }
+  img {
+    height: 16px;
   }
 }
 
+#nav-collapsible {
+  display: none;
+}
+
+#nav-collapsible > ul {
+  background-color: $black;
+
+  li {
+    height: 48px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid $darkgrey;
+
+    &:last-child {
+      border: none;
+    }
+
+    &:hover {
+      background-color: $fa-orange;
+    }
+  }
+
+  a {
+    color: $white;
+    display: block;
+    height: 100%;
+    line-height: 48px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.reveal {
+  display: block;
+}
+
+
 // 2.Body --------------------- //
-
 // --> Targets main article background
-
 section {
   background-color: $lightgrey;
 }
@@ -142,23 +180,16 @@ article {
 }
 
 .preview {
-  // background-color: red;
-
   img {
     height: 20px;
   }
 }
 
-
 // --> Changed video-player default controls
 .plyr__play-large {
-  // background-color: $fa-orange !important;
   border-width: 2px !important;
   cursor: pointer;
 }
-
-
-
 
 // 3.Footer --------------------- //
 footer {
@@ -176,51 +207,59 @@ footer {
 }
 
 /* =================================
-  Media Queries
+  Media Queries - Tablet
 ==================================== */
-
 
 @media (min-width: 769px) {
 
-  // article {
-  //   margin: 64px 90px 0;
-  //   padding: 0;
-  // }
-  //
-  // .card {
-  //   margin-right: 30px;
-  // }
+  // 1.Navigation --------------------- //
+  .nav-header > span {
+    display: none;
+  }
 
+  #nav-collapsible > ul {
+    background-color: $white;
+
+    li {
+      border: none;
+
+      &:hover {
+        background-color: $white;
+      }
+    }
+
+    a {
+      color: $black;
+    }
+  }
 }// End @media 760px
 
+
+/* =================================
+  Media Queries - Desktop
+==================================== */
 @media (min-width: 1025px) {
 
-  // Navigation
+  // 1.Navigation --------------------- //
   nav {
     border-bottom: none;
     border-right: 1px solid $lightgrey;
-    padding: 20px;
+  }
 
-    .fa-logo {
-      margin: 0;
+  .nav-header {
+    object {
       width: 200px;
-    }
-
-    ul {
-      margin-top: 60px;
-    }
-
-    li {
-      line-height: 40px;
-      margin-left: 0;
-
-      &:first-child {
-        margin-left: 0;
-      }
     }
   }
 
-  // 1.Header
+  #nav-collapsible > ul {
+    li {
+      text-align: left;
+      padding-left: 30px;
+    }
+  }
+
+  // 2.Body --------------------- //
   section > header {
     background-color: $white;
     border-bottom: 1px solid $lightgrey;
@@ -236,23 +275,23 @@ footer {
     }
   }
 
-  // 2.Body --------------------- //
-
   article {
-    margin: 64px 0 0 0;
+    margin: 64px 90px 0 90px;
     padding: 0;
   }
 
   .card {
     margin-bottom: 64px;
+    margin-right: 30px;
   }
 
   .last-card {
-    margin-left: 60px;
+    // margin-left: 60px;
+    margin-right: 0;
   }
 
 
-  // 3.Footer --------------------- //
+  // 2.Footer --------------------- //
   footer {
     padding: 24px 90px;
 
@@ -260,6 +299,4 @@ footer {
       width: 300px;
     }
   }
-
-
 } // End @media 1025px

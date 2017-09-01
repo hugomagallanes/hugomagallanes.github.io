@@ -11,13 +11,25 @@ body {
 nav {
   // Properties as Flex-container
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+.nav-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-collapsible {
+  flex-direction: column;
 }
 
 ul {
   // Properties as Flex-container
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -100,23 +112,30 @@ footer {
   Media Queries
 ==================================== */
 
-// Tablet-size
+// 1.Tablet-size --------------------- //
 @media (min-width: 769px) {
 
-  // article {
-  //   // Properties as Flex-container
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
-  // }
+  nav {
+    flex-direction: row;
+  }
 
-  // .card {
-  //   flex: 1 33%;
-  //   align-self: flex-start;
-  // }
+  #nav-collapsible {
+    display: flex!important;
+    flex: 1;
+  }
 
+  .nav-header {
+    flex: 1;
+  }
+
+  ul {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-// Desktop-size
+// 2.Desktop-size --------------------- //
 @media (min-width: 1025px) {
 
   body {
@@ -126,7 +145,7 @@ footer {
   nav {
     flex-direction: column;
     justify-content: flex-start;
-    flex: 1 400px;
+    width: 240px;
 
     // Fixes nav on the left side of the UI
     bottom: 0;
@@ -134,10 +153,17 @@ footer {
     top: 0;
   }
 
-  ul {
-    flex-direction: column;
-    align-items: flex-start;
+  #nav-collapsible {
+    display: flex!important;
+    flex: 10;
   }
+
+  ul {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
 
   section {
     // Overrides the inital setup and recalculates the overall width of the section
@@ -161,7 +187,7 @@ footer {
   }
 
   article {
-    width: 960px;
+    // width: 960px;
 
     // Properties as Flex-container
     align-items: flex-start;
@@ -199,6 +225,10 @@ footer {
 
   footer {
     flex-direction: row;
+
+    ul {
+      align-items: flex-end;
+    }
 
     a {
       // Properties as Flex-item
