@@ -38,6 +38,7 @@ h1,
 h1.notion-heading {
   font-family: 'EverettVF', sans-serif !important;
   font-weight: 400 !important;
+  color: "red";
 }
 
 h2,
