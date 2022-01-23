@@ -734,11 +734,26 @@
 :root {
   --collection-card-cover-size-small: 2.5rem !important; }
 
-/* NOTE: test */
-/* NOTE: Another test */
-/* NOTE: Yet another test */
+/* NOTE: Font-files */
 
 @font-face {
+  font-family: 'EverettVF';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://everetttype.s3.eu-west-3.amazonaws.com/TWKEverett-Bold-web.woff2");
+}
+
+@font-face {
+  font-family: 'EverettVF';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://everetttype.s3.eu-west-3.amazonaws.com/TWKEverett-Regular-web.woff2");
+}
+
+
+/* @font-face {
   font-family: 'Clash Grotesk Semibold';
   src: url("https://mattdowney.github.io/digital/fonts/ClashGrotesk-Semibold.woff2") format("woff2"), url("https://mattdowney.github.io/digital/fonts/ClashGrotesk-Semibold.woff") format("woff");
   font-weight: 700;
@@ -764,7 +779,7 @@
   src: url("https://mattdowney.github.io/digital/fonts/GeneralSans-Semibold.woff2") format("woff2"), url("https://mattdowney.github.io/digital/fonts/GeneralSans-Semibold.woff") format("woff");
   font-weight: 400;
   font-display: swap;
-  font-style: normal; }
+  font-style: normal; } */
 
 html {
   background-color: var(--bg) !important;
@@ -797,9 +812,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 h1.notion-heading {
-  font-family: "Clash Grotesk Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  font-size: 3.25rem !important;
-  line-height: 1.3 !important;
+  font-family: "EverettVF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 3.5rem !important;
+  line-height: 4.25rem !important;
   max-width: 53.75rem !important;
   font-weight: 500 !important;
   position: relative !important;
@@ -897,9 +912,11 @@ iframe, video, img {
   width: 100% !important; }
 
 .notion-heading {
-  padding: 0 !important; }
-  .notion-heading .notion-semantic-string {
-    line-height: 1.25rem !important; }
+  padding: 0 !important;
+}
+.notion-heading .notion-semantic-string {
+  line-height: 1.25rem !important;
+}
 
 .notion-collection-gallery {
   padding-top: 0 !important;
