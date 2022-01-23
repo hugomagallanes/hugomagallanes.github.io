@@ -1287,7 +1287,8 @@ iframe, video, img {
   display: none !important; }
 
 #page-index h1 {
-  margin-bottom: 2.25rem !important; }
+  /* margin-bottom: 2.25rem !important;  */
+}
 
 @media (max-width: 767.98px) {
   #page-index .notion-column-list .notion-column {
@@ -1597,10 +1598,16 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 /* Layout Home  */
 
 /* Intro */
+
+
+
 #block-3d25af3d18f442ebb45aded8012e2c06, #block-399bd1836048422aa9584de296478b83 {
   margin: 0!important;
   max-width: 82.25rem !important;
-  margin-top: 3.875rem !important;
+}
+
+#block-3d25af3d18f442ebb45aded8012e2c06 {
+ margin-top: 3.875rem !important;
 }
 
 
