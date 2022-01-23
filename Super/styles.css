@@ -833,12 +833,14 @@ h2.notion-heading {
 
 h3,
 h3.notion-heading {
-  opacity: 0.5 !important;
-  text-transform: uppercase !important;
+  /* opacity: 0.5 !important; */
+  /* text-transform: uppercase !important; */
   letter-spacing: 0.1rem !important;
-  font-size: 1.1875rem !important;
+  font-size: 1.625rem !important;
   margin-top: 1rem !important;
-  margin-bottom: 1.875rem !important; }
+  margin-bottom: 1.875rem !important;
+  color: var(--contrast-strong) !important;
+}
 
 p,
 p.notion-text__content {
@@ -1598,6 +1600,7 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 #block-3d25af3d18f442ebb45aded8012e2c06, #block-399bd1836048422aa9584de296478b83 {
   margin: 0!important;
   max-width: 82.25rem !important;
+  margin-top: 3.875rem !important;
 }
 
 
