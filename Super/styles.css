@@ -935,7 +935,7 @@ iframe, video, img {
     letter-spacing: 0.025rem !important; }
     .notion-text .notion-text__content .notion-semantic-string {
       white-space: wrap !important;
-      line-height: 1.75 !important;
+      line-height: 2.5rem !important;
       margin-bottom: 2rem !important;
       letter-spacing: 0.025rem !important; }
       .notion-text .notion-text__content .notion-semantic-string .notion-link, .notion-text .notion-text__content .notion-semantic-string .link {
