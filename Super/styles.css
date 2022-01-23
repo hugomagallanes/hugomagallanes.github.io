@@ -805,10 +805,10 @@ body {
 html, body,
 h1, h2, h3, p,
 ul, ol, li {
-  color: var(--contrast) !important; }
+  color: var(--contrast-strong) !important; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Clash Grotesk Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
+  font-family: "EverettVF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
 
 h1,
 h1.notion-heading {
@@ -819,7 +819,6 @@ h1.notion-heading {
   font-weight: 500 !important;
   position: relative !important;
   top: -1rem !important;
-  color: blue !important;
 }
   @media (max-width: 767.98px) {
     h1,
