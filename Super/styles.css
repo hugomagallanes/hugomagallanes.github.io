@@ -1590,6 +1590,18 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 
 .notion-text .notion-text__content .notion-semantic-string span span strong {
   display: inline-block !important; }
+
+
+/* Layout Home  */
+
+/* Intro */
+#block-3d25af3d18f442ebb45aded8012e2c06, #block-399bd1836048422aa9584de296478b83 {
+  margin: 0!important;
+  max-width: 82.25rem !important;
+}
+
+
+
 Viewport
 Window
 ×
