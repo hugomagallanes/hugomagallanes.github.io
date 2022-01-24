@@ -1181,7 +1181,10 @@ iframe, video, img {
     letter-spacing: 0.15rem !important;
     line-height: 2 !important;
     color: rgba(var(--contrast), 0.5) !important;
-    margin-bottom: 2.5rem !important; }
+    /* margin-bottom: 2.5rem !important;  */
+    margin-bottom: 0 !important;
+
+  }
   .super-content .notion-column-list .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title {
     display: block !important; }
     .super-content .notion-column-list .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title a {
