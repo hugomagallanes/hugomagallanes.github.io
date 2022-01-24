@@ -838,7 +838,7 @@ h3.notion-heading {
   letter-spacing: 0.1rem !important;
   font-size: 1.625rem !important;
   margin-top: 1rem !important;
-  margin-bottom: 1.875rem !important;
+  margin-bottom: 0.75rem !important;
   color: var(--contrast-strong) !important;
 }
 
