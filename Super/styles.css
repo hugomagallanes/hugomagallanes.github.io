@@ -1589,13 +1589,21 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 /* Writing block =========================================== */
 
   /* NOTE: Reduces spaces between posts */
-  #page-index tr {
-   margin-bottom: 20px!important
+  #page-index #block-f0fc34f096284bb2b742e7b08228b78a tr {
+    display: contents !important;
+    height: auto !important;
   }
 
   #page-index td {
      display: inline-block;
   }
+
+  #page-index #block-f0fc34f096284bb2b742e7b08228b78a td.date {
+    display: inline-block !important;
+    height: 30px !important;
+    margin-bottom: 20px !important;
+  }
+
 
   /* NOTE: Bolden date text */
   #page-index span.date {
