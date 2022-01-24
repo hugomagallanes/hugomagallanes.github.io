@@ -1644,6 +1644,17 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 }
 
 
+/* NOTE: Writing block table */
+td.notion-collection-table__cell.date {
+  height: 26px !important;
+  /* background-color: aquamarine; */
+  margin: 0px !important;
+  display: inline-block !important;
+  margin-bottom: 20px !important;
+}
+
+
+
 
 /* BLOCK - SOCIAL =========================================== */
 #block-3f311c9ce95f4d519e70d590a2ea7f83 {
