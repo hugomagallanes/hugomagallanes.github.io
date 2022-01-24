@@ -1565,6 +1565,20 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 /* NOTE: HOME CUSTOM LAYOUT */
 
 
+  /* Intro block */
+
+  /* NOTE: Extends text and remove bottom margin */
+  #page-index h1#block-3e2bd60de0a64ce79f49e0a45567c3d3 {
+    margin-bottom: 0px !important;
+    max-width: 100% !important;
+  }
+
+  #page-index h1#block-67bc91254a274a7686ca0f56703f1061 {
+    max-width: 100% !important;
+  }
+
+
+
   /* Expertise Block =========================================== */
   #block-c3c34b628c9c45f5a881494a0ec495fb, #block-2c2c54cc8eb3421fb6c850c90f780e0e {
     width: calc((100% - var(--column-spacing) * 10) * 0.5000000000000001);
