@@ -1588,7 +1588,7 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 
 /* Writing block =========================================== */
 
-/* NOTE: Reduces spaces between posts */
+  /* NOTE: Reduces spaces between posts */
   #page-index tr {
    margin-bottom: 20px!important
   }
@@ -1597,6 +1597,18 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
      display: inline-block;
   }
 
+  /* NOTE: Bolden date text */
+  #page-index span.date {
+    font-weight: 700 !important;
+  }
+
+
+/* Footer block =========================================== */
+
+  /* NOTE: Change text color to black  */
+  #block-51f5b2f3117848d4a748b6fa53453eaf .notion-semantic-string {
+    color: var(--contrast-strong) !important;
+  }
 
 
 
