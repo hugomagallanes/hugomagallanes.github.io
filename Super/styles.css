@@ -1565,8 +1565,7 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 /* NOTE: HOME CUSTOM LAYOUT */
 
 
-  /* Intro block */
-
+  /* Intro block =========================================== */
   /* NOTE: Extends text and remove bottom margin */
   #page-index h1#block-3e2bd60de0a64ce79f49e0a45567c3d3 {
     margin-bottom: 0px !important;
@@ -1577,27 +1576,17 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
     max-width: 100% !important;
   }
 
-
-
-  /* Expertise Block =========================================== */
-  #block-c3c34b628c9c45f5a881494a0ec495fb, #block-2c2c54cc8eb3421fb6c850c90f780e0e {
-    width: calc((100% - var(--column-spacing) * 10) * 0.5000000000000001);
+  /* Expertise block =========================================== */
+  #page-index ul {
+  list-style: none !important;
+  padding: 0 !important;
   }
 
-  #block-128556c59d964dceb3e2df27fa5961dc  ul {
-    list-style: none;
-    padding: 0 !important;
+  #page-index li span{
+    background-color: red;
+    font-size: 36px !important;
   }
 
-  #block-128556c59d964dceb3e2df27fa5961dc  li {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  #block-128556c59d964dceb3e2df27fa5961dc  span {
-    font-size: 2.625rem !important;
-    font-family: "EverettVF", sans-serif;
-  }
 
 
 
