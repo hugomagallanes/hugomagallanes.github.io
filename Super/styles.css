@@ -734,10 +734,10 @@
 :root {
   --collection-card-cover-size-small: 2.5rem !important; }
 
-/* NOTE: Font files */
 
+/* NOTE: Font files */
 @font-face {
-  font-family: 'EverettVF';
+  font-family: 'Everett';
   font-style: normal;
   font-display: swap;
   font-weight: 700;
@@ -745,42 +745,12 @@
 }
 
 @font-face {
-  font-family: 'EverettVF';
+  font-family: 'Everett';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
   src: url("https://everetttype.s3.eu-west-3.amazonaws.com/TWKEverett-Regular-web.woff2");
 }
-
-
-
-/* @font-face {
-  font-family: 'Clash Grotesk Semibold';
-  src: url("https://mattdowney.github.io/digital/fonts/ClashGrotesk-Semibold.woff2") format("woff2"), url("https://mattdowney.github.io/digital/fonts/ClashGrotesk-Semibold.woff") format("woff");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Clash Grotesk Regular';
-  src: url("https://mattdowney.github.io/digital/fonts/ClashGrotesk-Regular.woff2") format("woff2"), url("https://mattdowney.github.io/digital/fonts/ClashGrotesk-Regular.woff") format("woff");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'General Sans Regular';
-  src: url("https://mattdowney.github.io/digital/fonts/GeneralSans-Regular.woff2") format("woff2"), url("https://mattdowney.github.io/digital/fonts/GeneralSans-Regular.woff") format("woff");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'General Sans Semibold';
-  src: url("https://mattdowney.github.io/digital/fonts/GeneralSans-Semibold.woff2") format("woff2"), url("https://mattdowney.github.io/digital/fonts/GeneralSans-Semibold.woff") format("woff");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal; } */
 
 html {
   background-color: var(--bg) !important;
@@ -806,16 +776,16 @@ body {
 html, body,
 h1, h2, h3, p,
 ul, ol, li {
-  color: var(--contrast-strong) !important; }
+  color: var(--contrast-strong-strong) !important; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "EverettVF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
+  font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
 
 h1,
 h1.notion-heading {
-  font-family: "EverettVF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  font-size: 3.5rem !important;
-  line-height: 1.215 !important;
+  font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 3.25rem !important;
+  line-height: 1.3 !important;
   max-width: 53.75rem !important;
   font-weight: 500 !important;
   position: relative !important;
@@ -826,34 +796,32 @@ h1.notion-heading {
       font-size: 2.25rem !important; } }
 h2,
 h2.notion-heading {
-  font-size: 2.625rem !important;
-  font-family: "EverettVF, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 2.1875rem !important;
+  font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   margin-bottom: 1.25rem !important;
   margin-top: 1rem !important; }
 
 h3,
 h3.notion-heading {
-  /* opacity: 0.5 !important; */
-  /* text-transform: uppercase !important; */
+  opacity: 0.5 !important;
+  text-transform: uppercase !important;
   letter-spacing: 0.1rem !important;
-  font-size: 1.625rem !important;
+  font-size: 1.1875rem !important;
   margin-top: 1rem !important;
-  margin-bottom: 0.75rem !important;
-  color: var(--contrast-strong) !important;
-}
+  margin-bottom: 1.875rem !important; }
 
 p,
 p.notion-text__content {
-  font-size: 1.625rem !important;
+  font-size: 1.125rem !important;
   padding: 0 !important;
-  color: var(--contrast-strong) !important; }
+  color: var(--contrast-strong-strong) !important; }
   p .notion-semantic-string,
   p.notion-text__content .notion-semantic-string {
     line-height: 1.75 !important; }
     p .notion-semantic-string a,
     p.notion-text__content .notion-semantic-string a {
-      font-family: "EverettVF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-      color: var(--contrast) !important;
+      font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+      color: var(--contrast-strong-strong) !important;
       border-bottom: none !important;
       transition: 0.15s ease-in-out !important; }
 
@@ -895,7 +863,7 @@ html, body {
   -ms-overflow-style: none;
   min-height: 100%;
   width: 100%;
-  font-family: "General Sans Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
+  font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
 
 html, body,
 h1, h2, h3, p,
@@ -948,19 +916,19 @@ iframe, video, img {
           .notion-text .notion-text__content .notion-semantic-string strong {
             text-align: left !important; } }
         .notion-text .notion-text__content .notion-semantic-string strong a.link {
-          background: var(--contrast) !important;
+          background: var(--contrast-strong-strong) !important;
           color: var(--bg) !important;
           opacity: 1 !important;
           padding: 0.6rem 1.6rem !important;
           border-radius: 500rem !important;
           font-size: 1.125rem !important;
-          font-family: "Clash Grotesk Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+          font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
           letter-spacing: 0.05rem !important;
-          border: 0.2rem solid var(--contrast) !important;
+          border: 0.2rem solid var(--contrast-strong) !important;
           transition: all 0.2s ease-in-out !important; }
           .notion-text .notion-text__content .notion-semantic-string strong a.link:hover {
             background: var(--bg) !important;
-            color: var(--contrast) !important; }
+            color: var(--contrast-strong) !important; }
 
 .notion-column {
   padding: 0 !important; }
@@ -984,7 +952,7 @@ iframe, video, img {
     display: block !important; }
     .notion-column .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title a {
       font-size: 1.25rem !important;
-      font-family: "Clash Grotesk Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+      font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
       text-decoration: none !important;
       transition: all 0.2s ease-in-out !important; }
       .notion-column .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title a:hover {
@@ -1080,7 +1048,7 @@ iframe, video, img {
         transition: 0.2s ease-in-out !important;
         opacity: 1 !important;
         font-size: 2rem !important;
-        font-family: "Clash Grotesk Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
+        font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
         .super-content .notion-collection-gallery.large .notion-collection-card .notion-property__title .notion-property__title__icon-wrapper {
           display: none !important; }
   .super-content .notion-collection-gallery.medium {
@@ -1129,7 +1097,7 @@ iframe, video, img {
           white-space: normal !important;
           line-height: 1.5 !important;
           margin-bottom: 0.5rem !important;
-          font-family: "General Sans Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+          font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
           transition: all 0.2s ease-in-out !important; }
           .super-content .notion-collection-gallery.medium .notion-collection-card .notion-property__title .notion-semantic-string:hover {
             color: var(--accent) !important; }
@@ -1180,16 +1148,13 @@ iframe, video, img {
     text-transform: uppercase !important;
     letter-spacing: 0.15rem !important;
     line-height: 2 !important;
-    color: rgba(var(--contrast), 0.5) !important;
-    /* margin-bottom: 2.5rem !important;  */
-    margin-bottom: 0 !important;
-
-  }
+    color: rgba(var(--contrast-strong), 0.5) !important;
+    margin-bottom: 2.5rem !important; }
   .super-content .notion-column-list .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title {
     display: block !important; }
     .super-content .notion-column-list .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title a {
       font-size: 1.25rem !important;
-      font-family: "General Sans Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+      font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
       text-decoration: none !important;
       transition: all 0.2s ease-in-out !important; }
       .super-content .notion-column-list .notion-collection .notion-collection-table__wrapper .notion-collection-table .notion-collection-table__cell.title a:hover {
@@ -1228,13 +1193,13 @@ iframe, video, img {
       padding: 0 !important; }
       .super-navbar .super-navbar__content .super-navbar__logo .super-navbar__logo-text {
         font-size: 2rem !important;
-        color: var(--contrast) !important; }
+        color: var(--contrast-strong) !important; }
     .super-navbar .super-navbar__content .super-navbar__item-list .super-navbar__item {
       font-size: 0.9375rem !important;
       text-transform: uppercase !important;
       opacity: 1 !important;
-      color: var(--contrast) !important;
-      font-family: "Clash Grotesk Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+      color: var(--contrast-strong) !important;
+      font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
       letter-spacing: 0.125rem !important;
       padding: 0 !important;
       margin: 0 1.25rem !important;
@@ -1248,7 +1213,7 @@ iframe, video, img {
       color: var(--accent) !important;
       margin-right: 0 !important; }
       .super-navbar .super-navbar__content .super-navbar__item-list a.buy-now:hover {
-        color: var(--contrast) !important; }
+        color: var(--contrast-strong) !important; }
     .super-navbar .super-navbar__content .super-navbar__actions {
       padding: 0 !important; }
       .super-navbar .super-navbar__content .super-navbar__actions .super-navbar__button {
@@ -1257,7 +1222,7 @@ iframe, video, img {
       .super-navbar .super-navbar__content .super-navbar__actions .super-navbar__menu-open svg {
         width: 1.875rem !important;
         height: 1.875rem !important;
-        stroke: var(--contrast) !important; }
+        stroke: var(--contrast-strong) !important; }
   .super-navbar .super-navbar__menu-wrapper {
     width: 100% !important;
     height: 100% !important; }
@@ -1273,25 +1238,24 @@ iframe, video, img {
       .super-navbar .super-navbar__menu-wrapper.active .super-navbar__menu-close svg {
         width: 1.875rem !important;
         height: 1.875rem !important;
-        stroke: var(--contrast) !important; }
+        stroke: var(--contrast-strong) !important; }
     .super-navbar .super-navbar__menu-wrapper.active .super-navbar__menu-item-list {
       background: var(--accent) !important; }
       @media (max-width: 767.98px) {
         .super-navbar .super-navbar__menu-wrapper.active .super-navbar__menu-item-list {
           padding-bottom: 0.5rem !important; } }
       .super-navbar .super-navbar__menu-wrapper.active .super-navbar__menu-item-list .super-navbar__item {
-        color: var(--contrast) !important;
+        color: var(--contrast-strong) !important;
         font-size: 1.15rem !important;
         padding-bottom: 0.5 !important; }
         .super-navbar .super-navbar__menu-wrapper.active .super-navbar__menu-item-list .super-navbar__item:hover {
-          color: rgba(var(--contrast), 0.5); }
+          color: rgba(var(--contrast-strong), 0.5); }
 
 #page-index .notion-header.page {
   display: none !important; }
 
 #page-index h1 {
-  /* margin-bottom: 2.25rem !important;  */
-}
+  margin-bottom: 2.25rem !important; }
 
 @media (max-width: 767.98px) {
   #page-index .notion-column-list .notion-column {
@@ -1318,7 +1282,7 @@ iframe, video, img {
     #page-work .notion-text {
       text-align: left !important; } }
   #page-work .notion-text p {
-    color: rgba(var(--contrast), 0.5) !important;
+    color: rgba(var(--contrast-strong), 0.5) !important;
     margin-bottom: 0 !important; }
 
 #page-work .notion-collection-gallery.large {
@@ -1361,7 +1325,7 @@ iframe, video, img {
       border-bottom: none !important; }
     #page-work .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover {
       min-height: 36.25rem !important;
-      background: var(--contrast) !important;
+      background: var(--contrast-strong) !important;
       position: relative !important; }
       @media (max-width: 767.98px) {
         #page-work .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover {
@@ -1402,7 +1366,7 @@ iframe, video, img {
       width: 100% !important; } }
 [id*="writing-"] .color-gray {
   margin-bottom: 0.5rem !important;
-  color: rgba(var(--contrast), 0.5) !important; }
+  color: rgba(var(--contrast-strong), 0.5) !important; }
 
 [id*="writing-"] .notion-image {
   max-width: 100% !important;
@@ -1427,17 +1391,17 @@ iframe, video, img {
   width: 100%; }
 
 [id*="writing-"] .notion-code pre {
-  background: rgba(var(--contrast), 0.1) !important;
+  background: rgba(var(--contrast-strong), 0.1) !important;
   text-shadow: none !important;
   margin-bottom: 1.5rem !important;
   margin-top: 1.5rem !important; }
   [id*="writing-"] .notion-code pre code {
     text-shadow: none !important; }
     [id*="writing-"] .notion-code pre code span, [id*="writing-"] .notion-code pre code .token {
-      color: var(--contrast) !important; }
+      color: var(--contrast-strong) !important; }
 
 [id*="writing-"] .notion-quote {
-  font-family: "Clash Grotesk Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   font-size: 1.9rem !important; }
 
 [id*="writing-"] .notion-bulleted-list,
@@ -1477,10 +1441,10 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
   display: none !important; }
 
 .notion-collection .notion-collection-table__wrapper table tbody tr, .notion-collection .notion-collection-table__wrapper table tbody th {
-  color: rgba(var(--contrast), 0.5) !important; }
+  color: rgba(var(--contrast-strong), 0.5) !important; }
 
 .notion-collection .notion-collection-table__wrapper table tbody a {
-  color: var(--contrast) !important; }
+  color: var(--contrast-strong) !important; }
 
 .notion-collection .notion-collection-table {
   font-size: 1.25rem !important; }
@@ -1491,7 +1455,7 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 .notion-collection .notion-collection-table th {
   border: none !important;
   font-size: 1.25rem !important;
-  color: rgba(var(--contrast), 0.5) !important; }
+  color: rgba(var(--contrast-strong), 0.5) !important; }
 
 .notion-collection .notion-collection-table td {
   border: 0 !important;
@@ -1522,7 +1486,7 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
   opacity: 1 !important; }
   .notion-callout:before {
     content: "" !important;
-    background-color: var(--contrast) !important;
+    background-color: var(--contrast-strong) !important;
     opacity: 0.15 !important;
     position: absolute;
     top: 0px;
@@ -1530,7 +1494,7 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
     bottom: 0px;
     left: 0px; }
   .notion-callout.border {
-    border-top: 1px solid rgba(var(--contrast), 0.5) !important;
+    border-top: 1px solid rgba(var(--contrast-strong), 0.5) !important;
     border-left: none !important;
     border-bottom: none !important;
     border-right: none !important; }
@@ -1548,7 +1512,7 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
     .notion-callout .notion-callout__content .notion-collection tr {
       margin-bottom: 0.15rem !important; }
     .notion-callout .notion-callout__content .notion-collection .notion-collection-table__body tr a {
-      font-family: "General Sans Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
+      font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
     @media (max-width: 767.98px) {
       .notion-callout .notion-callout__content .notion-collection .notion-collection-table__body tr:first-child {
         display: block !important;
@@ -1570,16 +1534,16 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
     .notion-callout .notion-callout__content .notion-collection .notion-collection-table__body .notion-collection-table__cell.text {
       font-size: 1.125rem !important;
       letter-spacing: 0.05rem !important;
-      color: rgba(var(--contrast), 0.5) !important; }
+      color: rgba(var(--contrast-strong), 0.5) !important; }
       @media (max-width: 767.98px) {
         .notion-callout .notion-callout__content .notion-collection .notion-collection-table__body .notion-collection-table__cell.text {
           font-size: 1rem !important; } }
       .notion-callout .notion-callout__content .notion-collection .notion-collection-table__body .notion-collection-table__cell.text .notion-property__text {
         margin-bottom: 0.25rem !important; }
       .notion-callout .notion-callout__content .notion-collection .notion-collection-table__body .notion-collection-table__cell.text .color-green {
-        color: var(--contrast) !important;
+        color: var(--contrast-strong) !important;
         background: var(--accent) !important;
-        font-family: "Clash Grotesk Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        font-family: "Everett", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
         padding: 0.3rem 0.5rem 0.3rem !important;
         margin-right: 0.5rem !important;
         border-radius: 0.25rem !important; }
@@ -1598,69 +1562,28 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
   display: inline-block !important; }
 
 
-/* Home  */
-
-/* BLOCK - Intro ============================================== */
-#block-3d25af3d18f442ebb45aded8012e2c06, #block-399bd1836048422aa9584de296478b83 {
-  margin: 0!important;
-  max-width: 82.25rem !important;
-}
-
-#block-3d25af3d18f442ebb45aded8012e2c06 {
- margin-top: 3.875rem !important;
-}
-
-/* BLOCK - Expertise =========================================== */
-#block-c3c34b628c9c45f5a881494a0ec495fb, #block-2c2c54cc8eb3421fb6c850c90f780e0e {
-  width: calc((100% - var(--column-spacing) * 10) * 0.5000000000000001);
-}
-
-#block-128556c59d964dceb3e2df27fa5961dc  ul {
-  list-style: none;
-  padding: 0 !important;
-}
-
-#block-128556c59d964dceb3e2df27fa5961dc  li {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#block-128556c59d964dceb3e2df27fa5961dc  span {
-  font-size: 2.625rem !important;
-  font-family: "EverettVF", sans-serif;
-}
-
-/* BLOCK - ABOUT =========================================== */
-
-/* NOTE: About text link */
-#block-68d886ed247f4967b0d3d1087a8e3b4d a.notion-link {
-  font-size: 1.625 !important;
-  font-weight: 400 !important;
-  color: var(--contrast-strong) !important;
-}
+/* NOTE: HOME CUSTOM LAYOUT */
 
 
-/* NOTE: Writing block */
-#block-4be769aa085d49dfa5c3511a7bd4422a .notion-semantic-string {
-  color: var(--contrast-strong) !important;
-  font-size: 1.625rem !important;
-}
+  /* Expertise Block =========================================== */
+  #block-c3c34b628c9c45f5a881494a0ec495fb, #block-2c2c54cc8eb3421fb6c850c90f780e0e {
+    width: calc((100% - var(--column-spacing) * 10) * 0.5000000000000001);
+  }
 
+  #block-128556c59d964dceb3e2df27fa5961dc  ul {
+    list-style: none;
+    padding: 0 !important;
+  }
 
-/* NOTE: Writing block table */
-td.notion-collection-table__cell.date {
-  height: 26px !important;
-  margin: 0px !important;
-  display: inline-block !important;
-}
+  #block-128556c59d964dceb3e2df27fa5961dc  li {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
-
-
-/* BLOCK - SOCIAL =========================================== */
-#block-3f311c9ce95f4d519e70d590a2ea7f83 {
-  max-width: 62rem !important;
-  margin-bottom: 2.5rem !important;
-}
+  #block-128556c59d964dceb3e2df27fa5961dc  span {
+    font-size: 2.625rem !important;
+    font-family: "EverettVF", sans-serif;
+  }
 
 
 
