@@ -1595,12 +1595,9 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
   display: inline-block !important; }
 
 
-/* Layout Home  */
+/* Home  */
 
-/* Intro */
-
-
-
+/* BLOCK - Intro ============================================== */
 #block-3d25af3d18f442ebb45aded8012e2c06, #block-399bd1836048422aa9584de296478b83 {
   margin: 0!important;
   max-width: 82.25rem !important;
@@ -1608,6 +1605,26 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 
 #block-3d25af3d18f442ebb45aded8012e2c06 {
  margin-top: 3.875rem !important;
+}
+
+/* BLOCK - Expertise =========================================== */
+#block-c3c34b628c9c45f5a881494a0ec495fb, #block-2c2c54cc8eb3421fb6c850c90f780e0e {
+  width: calc((100% - var(--column-spacing) * 10) * 0.5000000000000001);
+}
+
+#block-128556c59d964dceb3e2df27fa5961dc  ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+#block-128556c59d964dceb3e2df27fa5961dc  li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#block-128556c59d964dceb3e2df27fa5961dc  span {
+  font-size: 2.625rem !important;
+  font-family: "EverettVF", sans-serif;
 }
 
 
