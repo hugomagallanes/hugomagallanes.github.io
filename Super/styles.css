@@ -1627,6 +1627,24 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
   font-family: "EverettVF", sans-serif;
 }
 
+/* BLOCK - ABOUT =========================================== */
+
+/* NOTE: About text link */
+#block-68d886ed247f4967b0d3d1087a8e3b4d a.notion-link {
+  font-size: 1.625 !important;
+  font-weight: 400 !important;
+  color: var(--contrast-strong) !important;
+}
+
+
+/* NOTE: Writing block */
+#block-4be769aa085d49dfa5c3511a7bd4422a .notion-semantic-string {
+  color: var(--contrast-strong) !important;
+  font-size: 1.625rem !important;
+}
+
+
+
 /* BLOCK - SOCIAL =========================================== */
 #block-3f311c9ce95f4d519e70d590a2ea7f83 {
   max-width: 62rem !important;
