@@ -1586,6 +1586,17 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
     font-size: 36px !important;
   }
 
+/* Writing block =========================================== */
+
+/* NOTE: Reduces spaces between posts */
+  #page-index tr {
+   margin-bottom: 20px!important
+  }
+
+  #page-index td {
+     display: inline-block;
+  }
+
 
 
 
