@@ -1627,6 +1627,12 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
   font-family: "EverettVF", sans-serif;
 }
 
+/* BLOCK - SOCIAL =========================================== */
+#block-3f311c9ce95f4d519e70d590a2ea7f83 {
+  max-width: 62rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
 
 
 Viewport
