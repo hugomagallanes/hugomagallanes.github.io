@@ -1578,12 +1578,11 @@ article[id*="block-projects-"] .notion-column-list .notion-column {
 
   /* Expertise block =========================================== */
   #page-index ul {
-  list-style: none !important;
-  padding: 0 !important;
+    list-style: none !important;
+    padding: 0 !important;
   }
 
   #page-index li span{
-    background-color: red;
     font-size: 36px !important;
   }
 
